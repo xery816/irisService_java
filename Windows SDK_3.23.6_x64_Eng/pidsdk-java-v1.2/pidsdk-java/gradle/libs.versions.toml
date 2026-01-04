@@ -1,0 +1,199 @@
+[versions]
+compileSdk = "33"
+buildTools = "33.0.1"
+
+android_gradle = "8.3.0-alpha01"
+kotlin = "1.8.20"
+ksp = "1.8.20-1.0.11"
+detekt = "1.22.0"
+
+hilt = "2.46.1"
+objectbox = "3.5.1"
+
+junit = "4.13.2"
+ext_junit = "1.1.5"
+espresso = "3.5.1"
+
+ktx = "1.10.1"
+
+annotation = "15.0"
+
+legacy = "1.0.0"
+annotationx = "1.6.0"
+
+fragment = "1.5.7"
+appcompat = "1.6.1"
+activity = "1.7.1"
+recyclerview = "1.3.0"
+swiperefreshlayout = "1.1.0"
+vectordrawable = "1.1.0"
+constraintlayout = "2.1.4"
+
+lifecycle = "2.6.1"
+navigation = "2.5.3"
+media = "1.6.0"
+camerax = "1.2.2"
+
+compose_bom = "2023.04.01"
+constraint_compose = "1.0.1"
+compose_compiler = "1.4.5"
+
+material = "1.9.0"
+
+room = "2.5.1"
+ktor = "2.3.1"
+logback = "1.2.11"
+netty = "4.1.53.Final"
+gson = "2.10.1"
+guava = "31.1-jre"
+uart = "1.5.0"
+usb_serial = "3.4.6"
+eventbus = "3.3.1"
+anko = "0.10.8"
+apache_compress = "1.20"
+apache_io = "2.5.0"
+rxandroid = "2.0.2"
+rxkotlin = "2.1.0"
+log4j = "2.19.0"
+slf4j = "2.0.6"
+logback_android = "3.0.0"
+
+qingzheng = "21.6.25"
+iruvc = "22.8.25"
+
+[libraries]
+androidx_core_ktx = { group = "androidx.core", name = "core-ktx", version.ref = "ktx" }
+androidx_annotation = { group = "androidx.annotation", name = "annotation", version.ref = "annotationx" }
+
+androidx_appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+androidx_constraintLayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+androidx_recyclerview = { group = "androidx.recyclerview", name = "recyclerview", version.ref = "recyclerview" }
+androidx_swiperefreshLayout = { group = "androidx.swiperefreshlayout", name = "swiperefreshlayout", version.ref = "swiperefreshlayout" }
+androidx_fragment_ktx = { group = "androidx.fragment", name = "fragment-ktx", version.ref = "fragment" }
+androidx_vectordrawable = { group = "androidx.vectordrawable", name = "vectordrawable", version.ref = "vectordrawable" }
+
+androidx_media = { group = "androidx.media", name = "media", version.ref = "media" }
+androidx_legacy = { group = "androidx.legacy", name = "legacy-support-v4", version.ref = "legacy" }
+
+androidx_lifecycle_ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycle" }
+androidx_lifecycle_service = { group = "androidx.lifecycle", name = "lifecycle-service", version.ref = "lifecycle" }
+
+hilt_android = { group = "com.google.dagger", name = "hilt-android", version.ref = "hilt" }
+hilt_compiler = { group = "com.google.dagger", name = "hilt-compiler", version.ref = "hilt" }
+hilt_android_testing = { group = "com.google.dagger", name = "hilt-android-testing", version.ref = "hilt" }
+
+androidx_compose_bom = { group = "androidx.compose", name = "compose-bom", version.ref = "compose_bom" }
+androidx_compose_material3 = { group = "androidx.compose.material3", name = "material3" }
+androidx_compose_preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+androidx_compose_livedata = { group = "androidx.compose.runtime", name = "runtime-livedata" }
+androidx_compose_ui_tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
+androidx_compose_ui_test_junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
+androidx_compose_ui_test_manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
+
+androidx_activity_ktx = { group = "androidx.activity", name = "activity-ktx", version.ref = "activity" }
+androidx_activity_compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activity" }
+androidx_lifecycle_viewmodel_compose = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-compose", version.ref = "lifecycle" }
+androidx_constraintLayout_compose = { group = "androidx.constraintlayout", name = "constraintlayout-compose", version.ref = "constraint_compose" }
+androidx_navigation_compose = { group = "androidx.navigation", name = "navigation-compose", version.ref = "navigation" }
+
+androidx_camerax = { group = "androidx.camera", name = "camera-core", version.ref = "camerax" }
+androidx_camerax_camera2 = { group = "androidx.camera", name = "camera-camera2", version.ref = "camerax" }
+androidx_camerax_lifecycle = { group = "androidx.camera", name = "camera-lifecycle", version.ref = "camerax" }
+androidx_camerax_video = { group = "androidx.camera", name = "camera-video", version.ref = "camerax" }
+androidx_camerax_view = { group = "androidx.camera", name = "camera-view", version.ref = "camerax" }
+androidx_camerax_extensions = { group = "androidx.camera", name = "camera-extensions", version.ref = "camerax" }
+
+androidx_room = { group = "androidx.room", name = "room-runtime", version.ref = "room" }
+androidx_room_compiler = { group = "androidx.room", name = "room-compiler", version.ref = "room" }
+androidx_room_ktx = { group = "androidx.room", name = "room-ktx", version.ref = "room" }
+
+annotation = { group = "org.jetbrains", name = "annotations", version.ref = "annotation" }
+eventbus = { group = "org.greenrobot", name = "eventbus", version.ref = "eventbus" }
+gson = { group = "com.google.code.gson", name = "gson", version.ref = "gson" }
+netty = { group = "io.netty", name = "netty-all", version.ref = "netty" }
+guava = { group = "com.google.guava", name = "guava", version.ref = "guava" }
+uart = { group = "com.github.Acccord", name = "AndroidSerialPort", version.ref = "uart" }
+usb_serial = { group = "com.github.mik3y", name = "usb-serial-for-android", version.ref = "usb_serial" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+log4j_core = { group = "org.apache.logging.log4j", name = "log4j-core", version.ref = "log4j"}
+log4j-slf4j-impl = { group = "org.apache.logging.log4j", name = "log4j-slf4j-impl", version.ref = "log4j"}
+logback = { group = "ch.qos.logback", name = "logback-classic", version.ref = "logback" }
+slf4j = { group = "org.slf4j", name = "slf4j-api", version.ref = "slf4j" }
+logback_android = { group = "com.github.tony19", name = "logback-android", version.ref = "logback_android" }
+
+ktor_server = { group = "io.ktor", name = "ktor-server", version.ref = "ktor" }
+ktor_server_websockets = { group = "io.ktor", name = "ktor-server-websockets", version.ref = "ktor" }
+ktor_server_core = { group = "io.ktor", name = "ktor-server-core", version.ref = "ktor" }
+ktor_server_cio = { group = "io.ktor", name = "ktor-server-cio", version.ref = "ktor" }
+ktor_server_netty = { group = "io.ktor", name = "ktor-server-netty", version.ref = "ktor" }
+ktor_server_content_negotiation = { group = "io.ktor", name = "ktor-server-content-negotiation", version.ref = "ktor" }
+ktor_serialization_kotlinx_json = { group = "io.ktor", name = "ktor-serialization-kotlinx-json", version.ref = "ktor" }
+
+ktor_client_websokets = { group = "io.ktor", name = "ktor-client-websockets", version.ref = "ktor" }
+ktor_client_cio = { group = "io.ktor", name = "ktor-client-cio", version.ref = "ktor" }
+ktor_client_okhttp = { group = "io.ktor", name = "ktor-client-okhttp", version.ref = "ktor" }
+
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx_test_ext = { group = "androidx.test.ext", name = "junit", version.ref = "ext_junit" }
+androidx_test_espresso = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espresso" }
+
+qingzheng = { group = "com.q_zheng", name = "lib", version.ref = "qingzheng" }
+iruvc = { group = "com.ifisense", name = "iruvc", version.ref = "iruvc" }
+
+# Dependencies of the included build-logic
+android_gradlePlugin = { group = "com.android.tools.build", name = "gradle", version.ref = "android-gradle" }
+kotlin_gradlePlugin = { group = "org.jetbrains.kotlin", name = "kotlin-gradle-plugin", version.ref = "kotlin" }
+ksp_gradlePlugin = { group = "com.google.devtools.ksp", name = "com.google.devtools.ksp.gradle.plugin", version.ref = "ksp" }
+
+[bundles]
+compose = [
+    "androidx_compose_material3",
+    "androidx_compose_livedata",
+    "androidx_compose_preview",
+    "androidx_navigation_compose",
+    "androidx_lifecycle_viewmodel_compose",
+    "androidx_activity_compose",
+    "androidx_constraintLayout_compose"
+]
+
+camerax = [
+    "androidx_camerax",
+    "androidx_camerax_camera2",
+    "androidx_camerax_extensions",
+    "androidx_camerax_lifecycle",
+    "androidx_camerax_video",
+    "androidx_camerax_view"
+]
+
+room = ["androidx_room", "androidx_room_ktx"]
+
+ktor_server = [
+    "ktor_server",
+    "ktor_server_core",
+    "ktor_server_cio",
+#    "ktor_server_netty",
+    "ktor_server_websockets",
+    "ktor_server_content_negotiation",
+    "ktor_serialization_kotlinx_json",
+#    "slf4j",
+#    "logback_android",
+    "logback",
+    #   "log4j_core",
+    #  "log4j-slf4j-impl"
+]
+
+ktor_client = ["ktor_client_websokets", "ktor_client_cio", "ktor_client_okhttp"]
+
+[plugins]
+android_application = { id = "com.android.application", version.ref = "android_gradle" }
+android_library = { id = "com.android.library", version.ref = "android_gradle" }
+hilt = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
+kotlin_android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlin_kapt = { id = "org.jetbrains.kotlin.kapt", version.ref = "kotlin" }
+navigation_safeargs = { id = "androidx.navigation.safeargs.kotlin", version.ref = "navigation" }
+detekt = { id = "io.gitlab.arturbosch.detekt", version.ref = "detekt" }
+kotlin_serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version = "1.8.0" }
+
+simbok_compose = { id = "cn.simbok.android.plugin.compose", version = "1.0" }
+simbok_hilt = { id = "cn.simbok.android.plugin.hilt", version = "1.0" }
+simbok_unittest = { id = "cn.simbok.android.plugin.unittest", version = "1.0" }

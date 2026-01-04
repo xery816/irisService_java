@@ -1,0 +1,19 @@
+<component name="ArtifactManager">
+  <artifact type="javafx" name="jfx">
+    <output-path>$PROJECT_DIR$/out/artifacts/jfx</output-path>
+    <properties id="javafx-properties">
+      <options>
+        <option name="appClass" value="cn.simbok.demo.App" />
+        <option name="description" value="" />
+        <option name="htmlPlaceholderId" value="" />
+        <option name="title" value="a" />
+        <option name="vendor" value="a" />
+        <option name="version" value="3" />
+      </options>
+    </properties>
+    <root id="root">
+      <element id="module-output" name="SimbokSDKDemo.app.main" />
+      <element id="module-output" name="SimbokSDKDemo.libIrisHelper.main" />
+    </root>
+  </artifact>
+</component>

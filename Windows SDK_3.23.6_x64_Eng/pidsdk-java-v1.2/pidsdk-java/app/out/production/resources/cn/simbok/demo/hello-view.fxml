@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.TextField?>
+<VBox alignment="CENTER" spacing="20.0"
+      xmlns:fx="http://javafx.com/fxml/1"
+      xmlns="http://javafx.com/javafx/17.0.6"
+      fx:controller="cn.simbok.demo.UIController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
+
+    <ImageView fx:id="irisImage" fitWidth="640" fitHeight="480"/>
+
+    <Label fx:id="tipLabel" text="请先初始化"/>
+
+    <HBox>
+        <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+        </padding>
+
+        <VBox>
+            <ListView fx:id="userList"/>
+            <HBox>
+                <Button fx:id="refreshButton" onAction="#onRefreshButtonClicked" text="刷新"/>
+                <Button fx:id="deleteButton" onAction="#onDeleteButtonClicked" text="删除"/>
+            </HBox>
+        </VBox>
+
+        <VBox>
+            <TextField fx:id="userId" text="test"/>
+            <Button fx:id="enrollButton" onAction="#onEnrollButtonClicked" text="注册"/>
+        </VBox>
+
+        <VBox>
+            <Button fx:id="initButton" onAction="#onInitButtonClicked" text="初始化"/>
+            <Button fx:id="identifyButton" onAction="#onIdentifyButtonClicked" text="识别"/>
+            <Button fx:id="stopButton" onAction="#onStopButtonClicked" text="停止"/>
+        </VBox>
+
+    </HBox>
+</VBox>
