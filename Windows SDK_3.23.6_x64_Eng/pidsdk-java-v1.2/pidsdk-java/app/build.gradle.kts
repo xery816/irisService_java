@@ -45,14 +45,13 @@ java {
 
 application {
     mainModule.set("cn.simbok.demo")
-    mainClass.set("cn.simbok.demo.Demo")
+    mainClass.set("cn.simbok.demo.App")
 
-//    val jniPath = "C:/Users/user/Desktop/jni/libs"
-//    applicationDefaultJvmArgs = arrayListOf(
-//        "-Djava.library.path=$jniPath"
-//    )
-//
-//    println(jniPath)
+    // 配置JNI库路径
+    val jniPath = "F:/iris_java/Windows SDK_3.23.6_x64_Eng/win_pidsdk_3.23.6_x64/bin"
+    applicationDefaultJvmArgs = arrayListOf(
+        "-Djava.library.path=$jniPath"
+    )
 }
 
 

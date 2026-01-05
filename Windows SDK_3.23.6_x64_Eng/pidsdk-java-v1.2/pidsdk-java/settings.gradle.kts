@@ -6,45 +6,36 @@
  */
 
 pluginManagement {
-    val REPOS_SERVER: String by settings
-
     repositories {
         maven {
-            url = uri("${REPOS_SERVER}/google")
-            isAllowInsecureProtocol = true
+            url = uri("https://maven.aliyun.com/repository/public")
         }
-
         maven {
-            url = uri("${REPOS_SERVER}/central")
-            isAllowInsecureProtocol = true
+            url = uri("https://maven.aliyun.com/repository/google")
         }
-
         maven {
-            url = uri("${REPOS_SERVER}/gradle-plugin")
-            isAllowInsecureProtocol = true
+            url = uri("https://maven.aliyun.com/repository/gradle-plugin")
         }
+        gradlePluginPortal()
+        google()
+        mavenCentral()
     }
 }
 
 dependencyResolutionManagement {
-    val REPOS_SERVER: String by settings
-
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
         maven {
-            url = uri("${REPOS_SERVER}/google")
-            isAllowInsecureProtocol = true
+            url = uri("https://maven.aliyun.com/repository/public")
         }
-
         maven {
-            url = uri("${REPOS_SERVER}/central")
-            isAllowInsecureProtocol = true
+            url = uri("https://maven.aliyun.com/repository/google")
         }
-
         maven {
-            url = uri("${REPOS_SERVER}/jitpack")
-            isAllowInsecureProtocol = true
+            url = uri("https://maven.aliyun.com/repository/jitpack")
         }
+        google()
+        mavenCentral()
     }
 }
 
